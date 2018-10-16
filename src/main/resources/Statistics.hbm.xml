@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="ua.andrZav.domain.entity.Statistics" table="statistics" catalog="file_statistics">
+        <id name="Id" column="id" type="java.lang.Integer">
+            <generator class="native"/>
+        </id>
+        <property name="LongestWord" type="java.lang.String" column='longest_word' length="250" not-null="false" />
+        <property name="ShortestWord" type="java.lang.String" column='shortest_word' length="250" not-null="false" />
+        <property name="LineLength" type="java.lang.Integer" column='line_length' />
+        <property name="AverWordsLength" type="java.lang.Integer" column='aver_words_length' />
+
+        <many-to-one name="file"
+                     class="ua.andrZav.domain.entity.Files" fetch="join" cascade="all">
+            <column name="file_id" not-null="true"/>
+        </many-to-one>
+    </class>
+</hibernate-mapping>
+

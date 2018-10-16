@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="ua.andrZav.domain.entity.Files" table="files" catalog="file_statistics">
+        <id name="id" column="file_id" type="java.lang.Integer">
+            <generator class="native"/>
+        </id>
+        <property name="DateTime" type="java.sql.Timestamp">
+            <column name="dateTime" not-null="true" />
+        </property>
+        <property name="FileName" type="java.lang.String">
+            <column name="fileName" length="250" not-null="true" />
+        </property>
+
+        <set name="statistics" table="statistics" cascade="all">
+            <key>
+                <column name="file_id" not-null="true"/>
+            </key>
+            <one-to-many class="ua.andrZav.domain.entity.Statistics"/>
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,65 @@
+.filters {
+    display: block;
+    width: 100%;
+}
+.filters .line-filter {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 2rem;
+    line-height: 2rem;
+}
+.filters .line-filter label {
+    display: inline-block;
+    width: 7rem;
+    min-height: 1.0rem;
+    font-weight: bold;
+}
+/* date picker */
+#datePickerLogsStart, #datePickerLogsEnd, #datePickerDateSelect {
+    position: relative;
+    display: inline-block;
+    height: 2.1rem;
+    width: 6rem;
+    text-align: center;
+}
+.filters .line-filter .panel-body-time {
+    position: relative;
+    display: inline-block;
+    height: 1.0rem;
+    width: 6.8rem;
+}
+.filters .line-filter .panel-body-time .time {
+    height: 2.1rem;
+    border: 1px solid #a9a9a9;
+}
+.filters .line-filter .panel-body-time .buttons-time-picker {
+    display: block;
+    /*  min-height: 0.5rem; */
+    height: 1.8rem;
+    margin-top: 1%;
+    float: right;
+}
+.filters .line-filter .panel-body-time .buttons-time-picker button {
+    display: block;
+    width: 1.5rem;
+    height: 1.0rem;
+}
+.filters .line-filter .panel-body-time .buttons-time-picker #btn-plus img, #btn-plus2 img {
+    margin-top: -20px !important;
+}
+.filters .line-filter .panel-body-time .buttons-time-picker #btn-minus img, #btn-minus2 img {
+    margin-top: -25px !important;
+}
+.filters .line-filter .panel-body-time .time input[type="text"] {
+    display: inline;
+    height: 2rem;
+    width: 1.5rem;
+    text-align: center;
+    border: none;
+}
+.filters .line-filter .form-control {
+    display: inline-block;
+    width: 13.1rem;
+    height: 1.8rem;
+}

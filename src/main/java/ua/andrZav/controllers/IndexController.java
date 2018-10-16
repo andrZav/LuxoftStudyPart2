@@ -1,0 +1,21 @@
+package ua.andrZav.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+import java.sql.SQLException;
+
+@Controller
+public class IndexController {
+  @RequestMapping({"/", "index"})
+  public String index() throws SQLException {
+    return "redirect:/home";
+  }
+
+  @RequestMapping(value = "/home", method = RequestMethod.GET)
+  public ModelAndView home() {
+    return new ModelAndView("home");
+  }
+}

@@ -1,0 +1,215 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 1.0em;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    font-family: "Arial", Arial, sans-serif;
+    background-color: #e1e1e1;
+}
+h4 {
+    text-align: center;
+    /*     font-size: 1.2em; */
+    margin: 20px;
+    font-weight: bold;
+    color: #42597f;
+}
+.container-main {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 48em;
+    margin: 10px auto;
+}
+.navbar-brand img {
+    margin-top: -11px;
+}
+.menu-container {
+    min-width: 50%;
+    margin: 0 auto !important;
+    color: #ffffff !important;
+    font-weight: bold;
+    /*font-size: 2vw;*/
+}
+.menu-container .nav-item {
+    display: inline-block;
+    /*     min-width: 22%; */
+    margin: 0 auto;
+    text-align: center;
+}
+.footer-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 180px;
+    bottom: 0;
+    float: right;
+    text-align: center;
+    color: #ffffff;
+    background-color: #2c2f32;
+}
+.footer-container .brand-big {
+    width: 100%;
+    margin: 10px auto;
+}
+.footer-container .brand-big ul {
+    list-style: none;
+}
+.footer-container .brand-big ul li a {
+    color: #fdf3f7;
+}
+.footer-container .contact-footer {
+    position: relative;
+    display: block;
+    width: 22rem;
+    line-height: 2rem;
+    margin: 10px auto;
+}
+.footer-container .contact-footer ul {
+    position: relative;
+    display: block;
+    list-style: none;
+}
+.footer-container .contact-footer ul li {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+}
+.footer-container .contact-footer ul li .contact-name {
+    display: inline-block;
+    margin-left: 2%;
+
+}
+.custom-menu {
+    background-color: #fdfdfd !important;
+}
+/* tables */
+.table-area {
+    display: table;
+    white-space: normal;
+    text-align: center;
+    /*font-size: 0.86vw;*/
+    width: 80%;
+    margin: 0 auto;
+}
+.table-size {
+    display: block;
+    width: 100%;
+    overflow-x: scroll !important;
+    font-size: 1em;
+}
+.table-size tr th, td {
+    width: 10% !important;
+    text-align: center;
+}
+.table-size {
+    display: block;
+    border: 1px solid #b7c2cf;
+    font-size: 0.9em !important;
+}
+.table-size tr th {
+    background-color: #2e363e;
+    color: #b7c2cf;
+}
+.table-size tr td {
+    min-width: 2rem !important;
+    max-width: 15rem !important;
+
+}
+.table-area table tr th {
+    text-align: center;
+}
+#close-button {
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+}
+#close-button img {
+    width: 100%;
+    height: 100%;
+}
+.filters-input {
+    width: 178px !important;
+    margin: 0;
+    padding: 0;
+}
+.panel-left {
+    width: 98%;
+    margin: 0 auto;
+    /*     float: left; */
+}
+.table-right {
+    width: 50%;
+    overflow-x: scroll;
+    float: right;
+}
+.table-left {
+    width: 50%;
+    overflow-x: scroll;
+    float: left;
+}
+#deleteModalLabel, .modal-body {
+    color: #000000 !important;
+}
+.users-code-label {
+    width: 100%;
+    background-color: #cfdad1;
+    color: #000000;
+    padding: 5px;
+    border: 1px dashed #2929e4;
+    border-radius: 3px;
+}
+.users-code-label input[type="text"] {
+    display: block;
+    width: 100%;
+    height: 32px;
+}
+
+.users-balance {
+    display: inline-block;
+    width: 100%;
+    color: #000000 !important;
+    font-weight: bold;
+}
+.blocked-user {
+    color: #ff0000;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+.authorized-user {
+    color: #131513;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.pageModal {
+}
+#login-name{
+    margin-left: 5px;
+    font-weight: bolder;
+    font-style: italic;
+    color: #2e363e;
+}
+#login-name:hover {
+    color: #ffffff;
+}
+.payment-complete {
+    display: none;
+}
+
+
+
+
+
